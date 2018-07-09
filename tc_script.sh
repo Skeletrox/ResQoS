@@ -8,7 +8,7 @@ create_connection() {
 #		echo "A movie about the evacuation of 300,000 Allied Troops from the town of Dunkirk in northern France" >> logs.txt
 #		echo "tc filter add dev eth0 parent 1:1 protocol ip prio 1 u32 match ip dst $2 match ip dport $3 0xffff classid 1:16" >> logs.txt
 #		sudo tc filter add dev eth0 parent 1:1 protocol ip prio 1 u32 match ip dst $2 match ip dport $3 0xffff classid 1:13
-		
+
 #	elif [ $1 = "/guardians.mp4" ]
 #	then
 #		echo "Peter Quill finds the answer to a question, but will he like it?" >> logs.txt
@@ -21,9 +21,9 @@ create_connection() {
 #		echo "tc filter add dev eth0 parent 1:1 protocol ip prio 1 u32 match ip dst $2 match ip dport $3 0xffff classid 1:16" >> logs.txt
 #		sudo tc filter add dev eth0 parent 1:1 protocol ip prio 1 u32 match ip dst $2 match ip dport $3 0xffff classid 1:13
 
-	if [ $1 = "/madmax.mp4" ]
+	if [ $1 = "/dunkirk.mp4" ]
 	then
-		echo "Post-Apocalyptic Australia with breathtaking cinematography and amazing directing" >> logs.txt
+		echo "A movie about the evacuation of 300,000 Allied Troops from the town of Dunkirk in northern France" >> logs.txt
 		echo "tc filter add dev eth0 parent 1:1 protocol ip prio 1 u32 match ip dst $2 match ip dport $3 0xffff classid 1:14" >> logs.txt
 		sudo tc filter add dev eth0 parent 1:1 protocol ip prio 1 u32 match ip dst $2 match ip dport $3 0xffff classid 1:14
 	else
@@ -31,7 +31,7 @@ create_connection() {
 		echo "tc filter add dev eth0 parent 1:1 protocol ip prio 1 u32 match ip dst $2 match ip dport $3 0xffff classid 1:13" >> logs.txt
 		sudo tc filter add dev eth0 parent 1:1 protocol ip prio 1 u32 match ip dst $2 match ip dport $3 0xffff classid 1:13
 	fi
-	
+
 
 }
 
